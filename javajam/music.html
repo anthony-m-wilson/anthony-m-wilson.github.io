@@ -33,6 +33,14 @@
         The first Friday night each month at JavaJam is a special night. Join
         us from 8 pm to 11 pm for some music you won't want to miss!
       </p>
+
+      <div id="verify">
+        <label for="age">Please enter your age for special offers:</label>
+        <input type="number" name="age" id="age" min="1" max="109">
+        <button onclick="verify()">Submit</button>
+      </div>
+
+      <script src="js/verifysenior.js"></script>
       <h4>January</h4>
       <div class="details">
         <a href="images/melanie.jpg"><img src="images/melaniethumb.jpg" alt="Melanie" width="100"
@@ -45,11 +53,13 @@
       </div>
     </main>
     <footer>
-      <small>
-        <i>Copyright © 2023 JavaJam Coffee Bar<br />
-          <a href="mailto:anthony.m.wilson5@gmail.com">anthony.m.wilson@gmail.com</a>
-        </i>
-      </small>
+      Copyright &copy; 2023 JavaJam Coffee Bar<br />
+      <a href="mailto:anthony.m.wilson5@gmail.com">anthony.m.wilson@gmail.com</a>
+
+      <div>
+        <p id="dateupdate"></p>
+        <script src="js/dateupdate.js"></script>
+      </div>
     </footer>
   </div>
 </body>
