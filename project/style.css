@@ -78,6 +78,7 @@ nav .active {
   vertical-align: middle;
 }
 
+
 @media (max-width: 950px) {
   nav ul li {
     font-size: medium;
