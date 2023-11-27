@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 article,
@@ -17,6 +18,7 @@ nav,
 section {
   display: block;
 }
+
 
 header {
   align-items: center;
@@ -87,15 +89,38 @@ nav .active {
 }
 
 @media (max-width: 735px) {
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: inline-block;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header .logo {
+    justify-content: center;
+    background-color: #5E7EAC;
+    display: flex;
+    float: none;
+  }
+
   .header {
     height: fit-content;
     background-color: #a3a3a3;
     display: block;
     align-items: center;
-  }
-
-  .logo img {
-    display: inline;
   }
 
   nav {
