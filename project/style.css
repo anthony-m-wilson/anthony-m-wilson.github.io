@@ -5,6 +5,11 @@
 
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 article,
 aside,
 details,
@@ -21,10 +26,11 @@ section {
 
 
 header {
+  padding: .5%;
+  margin: .5%;
+  width: 99%;
   align-items: center;
-  height: 100px;
   background-color: #a3a3a3;
-  width: 100%;
 }
 
 header .logo {
@@ -49,6 +55,7 @@ nav {
 nav ul {
   list-style: none;
   display: inline-flex;
+  margin: 0;
 }
 
 nav ul li {
@@ -75,9 +82,22 @@ nav .active {
 
 .logo img {
   height: 100px;
-  vertical-align: middle;
 }
 
+main .picture,
+.blog,
+.archive,
+.gallery {
+  padding: .5%;
+  margin: .5%;
+  width: 99%;
+  border: #2b303e 1px solid;
+}
+
+
+footer {
+  padding: 5em;
+}
 
 @media (max-width: 950px) {
   nav ul li {
