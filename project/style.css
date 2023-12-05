@@ -26,7 +26,6 @@ section {
 
 
 header {
-  padding: .5%;
   margin: .5%;
   width: 99%;
   align-items: center;
@@ -53,6 +52,7 @@ nav {
 }
 
 nav ul {
+  padding-left: 0;
   list-style: none;
   display: inline-flex;
   margin: 0;
@@ -99,7 +99,7 @@ footer {
   padding: 5em;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 965px) {
   nav ul li {
     font-size: medium;
   }
@@ -109,7 +109,7 @@ footer {
   }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 785px) {
 
   article,
   aside,
