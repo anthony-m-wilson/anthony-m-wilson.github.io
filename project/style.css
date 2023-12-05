@@ -8,6 +8,7 @@
 html,
 body {
   overflow-x: hidden;
+  background-color: floralwhite;
 }
 
 article,
@@ -24,10 +25,8 @@ section {
   display: block;
 }
 
-
 header {
-  margin: .5%;
-  width: 99%;
+  width: 100%;
   align-items: center;
   background-color: #a3a3a3;
 }
@@ -84,6 +83,18 @@ nav .active {
   height: 100px;
 }
 
+main .carouselHomePage {
+  padding: .5%;
+  margin: .5%;
+  width: 99%;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+}
+
 main .picture,
 .blog,
 .archive,
@@ -94,6 +105,14 @@ main .picture,
   border: #2b303e 1px solid;
 }
 
+.text-overflow-clamp {
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+}
 
 footer {
   padding: 5em;
@@ -109,7 +128,7 @@ footer {
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 768px) {
 
   article,
   aside,
@@ -171,6 +190,10 @@ footer {
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 0.2em;
     font-size: 1.25em;
+  }
+
+  .carouselHomePage {
+    display: none;
   }
 
   .clear {

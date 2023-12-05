@@ -21,7 +21,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" media="screen" />
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -67,7 +67,7 @@
         <ul>
           <li><a class="active" href="">Home</a></li>
           <li><a href="about.html">About Me</a></li>
-          <li><a href="blog.html">Today's Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="pic.html">Picture Of The Week</a></li>
           <li><a href="archive.html">Archive</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -77,86 +77,97 @@
   </header>
 
   <main>
+    <!-- Carousel -->
+    <div class="carouselHomePage">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Image of the Week"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Latest Blog"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Archive"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Gallery"></button>
+        </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Image of the Week"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Latest Blog"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Archive"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-          aria-label="Gallery"></button>
-      </div>
+        <!-- Picture -->
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="images/ImageWeek.JPG" class="d-block w-100" alt="image of the week">
+            <div class="carousel-caption d-md-block">
+              <h3 class="fw-bold">Image of the Week</h3>
+              <p>Examine and learn about our amazing picture of the week</p>
+            </div>
+          </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/logo.png" class="d-block w-100" alt="image of the week">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Image of the Week</h3>
-            <p>Examine and learn about our amazing picture of the week</p>
+          <!-- Blog -->
+          <div class="carousel-item">
+            <img src="images/alien.jpeg" class="rounded d-block w-100" alt="blog image">
+            <div class="carousel-caption d-md-block">
+              <h3 class="fw-bold">Latest Blog</h3>
+              <p>Come read the most recent blog about how adulting is the worst.</p>
+            </div>
+          </div>
+
+          <!-- Archive -->
+          <div class="carousel-item">
+            <img src="images/logo.png" class="rounded d-block w-100" alt="Archive image">
+            <div class="carousel-caption d-md-block">
+              <h3 class="fw-bold">Archive</h3>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="carousel-item">
+            <img src="images/logo.png" class="d-block w-100" alt="Gallery image">
+            <div class="carousel-caption d-md-block">
+              <h3 class="fw-bold">Gallery</h3>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="images/logo.png" class="d-block w-100" alt="blog image">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Latest Blog</h3>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/logo.png" class="d-block w-100" alt="Archive image">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Archive</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/logo.png" class="d-block w-100" alt="Gallery image">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Gallery</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
+    <!-- Picture of the Week -->
     <div class="picture">
-      <section class="py-5 container">
+      <div class="py-5 container">
         <h1 class="fw-bold">Image of the Week</h1>
         <div class="row py-lg-5">
           <div class="col-lg-6">
-            <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the
-              creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-            <p>
-            <p class="text-body-secondary">DATE</p>
-            <a href="pic.html" class="btn btn-primary my-2">Go to Image</a>
+            <p class="lead text-body-secondary"></p>Mesmerizing hues of nature's canvas: A breathtaking snapshot of the
+            week, featuring the majestic red rocks standing tall against the endless sky. Nature's masterpiece in every
+            shade of red.<p>
+              <a href="pic.html" class="btn btn-primary my-2">Go to Image</a>
             </p>
           </div>
           <div class="col-lg-6">
-            <img src="images/logo.png" alt="" class="img-fluid rounded">
+            <img src="images/ImageWeek.JPG" alt="" class="img-fluid rounded">
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
+    <!-- Latest Blog -->
     <div class="blog">
-      <section class="py-5 container">
+      <div class="py-5 container">
         <h1 class="fw-bold">Latest Blog</h1>
         <div class="row py-lg-5">
           <div class="col-lg-6">
-            <img src="images/logo.png" alt="blog post image" class="img-fluid rounded">
+            <img src="images/alien.jpeg" alt="blog post image" class="img-fluid rounded">
           </div>
           <div class="col-lg-6">
             <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the
@@ -167,220 +178,224 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
+    <!-- Archive -->
     <div class="archive">
-      <div class="album py-5">
-        <div class="container">
-          <h1 class="fw-bold">Archive</h1>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 class="card-title">blog title</h2>
-                  <h3 class="card-subtitle mb-2 text-muted">Date</h3>
-                  <p class="card-text">Lorem ipsum ...</p>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
+      <div class="py-5 container">
+        <h1 class="fw-bold">Archive</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h2 id="blog1Title" class="card-title">Blog Title</h2>
+                <h4 id="blog1Date" class="card-subtitle mb-2 text-muted">Date</h4>
+                <p id="blog1Content" class="card-text text-overflow-clamp">...</p>
+                <a href="blog.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 class="card-title">blog title</h2>
-                  <h3 class="card-subtitle mb-2 text-muted">Date</h3>
-                  <p class="card-text">Lorem ipsum ...</p>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h2 id="blog2Title" class="card-title">Blog Title</h2>
+                <h4 id="blog2Date" class="card-subtitle mb-2 text-muted">Date</h4>
+                <p id="blog2Content" class="card-text text-overflow-clamp">...</p>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 class="card-title">blog title</h2>
-                  <h3 class="card-subtitle mb-2 text-muted">Date</h3>
-                  <p class="card-text">Lorem ipsum ...</p>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h2 id="blog3Title" class="card-title">Blog Title</h2>
+                <h4 id="blog3Date" class="card-subtitle mb-2 text-muted">Date</h4>
+                <p id="blog3Content" class="card-text text-overflow-clamp">...</p>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 class="card-title">blog title</h2>
-                  <h3 class="card-subtitle mb-2 text-muted">Date</h3>
-                  <p class="card-text">Lorem ipsum ...</p>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h2 id="blog4Title" class="card-title">Blog Title</h2>
+                <h4 id="blog4Date" class="card-subtitle mb-2 text-muted">Date</h4>
+                <p id="blog4Content" class="card-text text-overflow-clamp">...</p>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 class="card-title">blog title</h2>
-                  <h3 class="card-subtitle mb-2 text-muted">Date</h3>
-                  <p class="card-text">Lorem ipsum ...</p>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h2 id="blog5Title" class="card-title">Blog Title</h2>
+                <h4 id="blog5Date" class="card-subtitle mb-2 text-muted">Date</h4>
+                <p id="blog5Content" class="card-text text-overflow-clamp">...</p>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
               </div>
             </div>
           </div>
         </div>
+        <script src="js/blog.js"></script>
       </div>
     </div>
 
+    <!-- Gallery -->
     <div class="gallery">
-      <div class="album py-5">
-        <div class="container">
-          <h1 class="fw-bold">Gallery</h1>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="py-5 album container">
+        <h1 class="fw-bold">Gallery</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                   </div>
+                  <small class="text-body-secondary">Date</small>
                 </div>
               </div>
             </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="images/logo.png" alt="">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Date</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/logo.png" alt="">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -390,7 +405,8 @@
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
     <div class="col mb-3">
       <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
-      <p class="text-body-secondary p-0">Copyright © 2023 Anthony Wilson</p>
+      <p class="text-body-secondary p-0">Copyright © 2023</p>
+      <p class="text-body-secondary p-0">Anthony Wilson</p>
     </div>
 
     <div class="col mb-3">
@@ -413,7 +429,7 @@
     <div class="col mb-3">
       <h5>Contact Us</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-3"><a class="nav-link p-0 text-body-seconday"
+        <li class="nav-item mb-3"><a class="nav-link p-0 text-body-secondary"
             href="mailto:anthony.m.wilson5@gmail.com">Email</a>
         </li>
         <li class="nav-item mb-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
