@@ -123,6 +123,11 @@ section:nth-child(odd) {
   display: -webkit-box;
 }
 
+.card-body img {
+  max-width: 600px;
+  object-fit: contain;
+}
+
 footer {
   background-color: dimgrey;
   padding: 5em;
@@ -204,6 +209,10 @@ footer {
 
   .carouselHomePage {
     display: none;
+  }
+
+  .card-body img {
+    max-width: 100%;
   }
 
   .clear {
