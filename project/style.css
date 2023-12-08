@@ -111,7 +111,7 @@ main .picture,
 }
 
 section:nth-child(odd) {
-  background-color: #a3a3a3;
+  background-color: #a3aeb7
 }
 
 .text-overflow-clamp {

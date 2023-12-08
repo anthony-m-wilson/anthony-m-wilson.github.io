@@ -68,7 +68,7 @@
           <li><a class="active" href="">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="pic.html">Picture Of The Week</a></li>
+          <li><a href="pic.html">Image Of The Week</a></li>
           <li><a href="archive.html">Archive</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -79,7 +79,7 @@
   <main>
     <!-- Carousel -->
     <div class="carouselHomePage">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Image of the Week"></button>
@@ -94,51 +94,58 @@
         <!-- content -->
         <div class="carousel-inner rounded">
 
-          <!-- Picture -->
-          <div class="carousel-item active">
-            <img src="images/robert-bye-GgMm-KNhofg-unsplash.jpg" class="d-block w-100"
-              alt="image of the week (street)">
-            <div class="carousel-caption d-md-block">
-              <h3 class="fw-bold">Image of the Week</h3>
-              <p>Learn more about our amazing picture of the week</p>
+          <!-- Image -->
+          <a href="pic.html">
+            <div class="carousel-item active">
+              <img src="images/robert-bye-GgMm-KNhofg-unsplash.jpg" class="d-block w-100"
+                alt="image of the week (street)">
+              <div class="carousel-caption d-md-block">
+                <h3 class="fw-bold">Image of the Week</h3>
+                <p>Learn more about our amazing image of the week</p>
+              </div>
             </div>
-          </div>
+          </a>
 
           <!-- Blog -->
-          <div class="carousel-item">
-            <img src="images/alien.jpeg" class="rounded d-block w-100" alt="blog image">
-            <div class="carousel-caption d-md-block">
-              <h3 class="fw-bold">Latest Blog</h3>
-              <p>Come read the most recent blog about how adulting is the worst</p>
+          <a href="blog.html">
+            <div class="carousel-item">
+              <img src="images/alien.jpeg" class="rounded d-block w-100" alt="blog image">
+              <div class="carousel-caption d-md-block">
+                <h3 class="fw-bold">Latest Blog</h3>
+                <p>Come read the most recent blog about how adulting is the worst</p>
+              </div>
             </div>
-          </div>
+          </a>
 
           <!-- Archive -->
-          <div class="carousel-item">
-            <img src="images/pexels-pixabay-33130.jpg" class="rounded d-block w-100" alt="Archive image">
-            <div class="carousel-caption d-md-block">
-              <h3 class="fw-bold">Archive</h3>
-              <p>Look back at some of most interesting posts</p>
+          <a href="archive.html">
+            <div class="carousel-item">
+              <img src="images/pexels-pixabay-33130.jpg" class="rounded d-block w-100" alt="Archive image">
+              <div class="carousel-caption d-md-block">
+                <h3 class="fw-bold">Archive</h3>
+                <p>Look back at some of most interesting posts</p>
+              </div>
             </div>
-          </div>
+          </a>
 
           <!-- Gallery -->
-          <div class="carousel-item">
-            <img src="images/collage.png" class="d-block w-100" alt="Gallery image">
-            <div class="carousel-caption d-md-block">
-              <h3 class="fw-bold">Gallery</h3>
-              <p>Take a look at some our wonderful images taken throughout the year</p>
+          <a href="gallery.html">
+            <div class="carousel-item">
+              <img src="images/collage.png" class="d-block w-100" alt="Gallery image">
+              <div class="carousel-caption d-md-block">
+                <h3 class="fw-bold">Gallery</h3>
+                <p>Take a look at some our wonderful images taken throughout the year</p>
+              </div>
             </div>
-          </div>
+          </a>
+
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -147,17 +154,16 @@
 
     <!-- sections -->
     <div class="mainSections">
-      <!-- Picture of the Week -->
+      <!-- image of the Week -->
       <section class="picture border-top">
         <div class="py-5 container">
           <h1 class="fw-bold">Image of the Week</h1>
           <div class="row py-lg-5">
             <div class="col-lg-6">
-              <p class="lead text-body-secondary"></p>Mesmerizing hues of nature's canvas: A breathtaking snapshot of
-              the
-              week, featuring the majestic red rocks standing tall against the endless sky. Nature's masterpiece in
-              every
-              shade of red.<p>
+              <p class="lead text-body-secondary"></p>This week's featured image showcases a vibrant downtown scene
+              during sunset. The setting sun casts a warm glow on the busy street, creating long shadows between the
+              tall buildings. The photo captures the dynamic energy of urban life against the backdrop of a serene
+              twilight.<p>
                 <a href="pic.html" class="btn btn-primary my-2">Go to Image</a>
               </p>
             </div>
@@ -384,8 +390,7 @@
         <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
         <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About Me</a></li>
         <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-body-secondary">Today's Blog</a></li>
-        <li class="nav-item mb-2"><a href="pic.html" class="nav-link p-0 text-body-secondary">Picture of the Week</a>
-        </li>
+        <li class="nav-item mb-2"><a href="pic.html" class="nav-link p-0 text-body-secondary">Image of the Week</a></li>
         <li class="nav-item mb-2"><a href="archive.html" class="nav-link p-0 text-body-secondary">Archive</a></li>
         <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-body-secondary">Gallery</a></li>
       </ul>
