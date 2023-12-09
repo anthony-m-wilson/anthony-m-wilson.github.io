@@ -128,9 +128,22 @@ section:nth-child(odd) {
   object-fit: contain;
 }
 
+#imageOfWeekInfo figure {
+  padding: 2%;
+  background-color: #a3aeb7;
+}
+
+#imageInfo {
+  background-color: #a3aeb7;
+}
+
+#imageInfo p {
+  font-size: x-large
+}
+
 #aboutMeInfo {
   background-color: #5E7EAC;
-background-image: url("images/—Pngtree—mountain topography contour lines_7472393.png");
+  background-image: url("images/—Pngtree—mountain topography contour lines_7472393.png");
 }
 
 .aboutMe1,
@@ -151,6 +164,10 @@ footer {
 
   nav a {
     padding: 10px;
+  }
+
+  #imageInfo p {
+    font-size: large
   }
 }
 
@@ -224,6 +241,10 @@ footer {
 
   .card-body img {
     max-width: 100%;
+  }
+
+  #imageInfo p {
+    font-size: medium
   }
 
   .clear {
