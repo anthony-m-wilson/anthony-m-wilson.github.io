@@ -128,17 +128,8 @@ section:nth-child(odd) {
   object-fit: contain;
 }
 
-#imageOfWeekInfo figure {
-  padding: 2%;
-  background-color: #a3aeb7;
-}
-
-#imageInfo {
-  background-color: #a3aeb7;
-}
-
-#imageInfo p {
-  font-size: x-large
+#week {
+  max-width: 96%;
 }
 
 #aboutMeInfo {
