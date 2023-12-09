@@ -22,6 +22,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" media="screen" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -35,7 +36,6 @@
 </script>
 
 <body>
-
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="bootstrap" viewBox="0 0 118 94">
       <title>Bootstrap</title>
@@ -62,211 +62,32 @@
 
   <header>
     <div class="header">
-      <a href="src/index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
       <nav id="nav">
         <ul>
-          <li><a class="active" href="">Home</a></li>
-          <li><a href="src/about.html">About Me</a></li>
-          <li><a href="src/blog.html">Blog</a></li>
-          <li><a href="src/pic.html">Image Of The Week</a></li>
-          <li><a href="src/archive.html">Archive</a></li>
-          <li><a href="src/gallery.html">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="pic.html">Image Of The Week</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a class="active" href="">Gallery</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Carousel -->
-    <div class="carouselHomePage">
-      <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Image of the Week"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Latest Blog"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Archive"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Gallery"></button>
-        </div>
-
-        <!-- content -->
-        <div class="carousel-inner rounded">
-
-          <!-- Image -->
-          <a href="src/pic.html">
-            <div class="carousel-item active">
-              <img src="images/robert-bye-GgMm-KNhofg-unsplash.jpg" class="d-block w-100"
-                alt="image of the week (street)">
-              <div class="carousel-caption d-md-block">
-                <h3 class="fw-bold">Image of the Week</h3>
-                <p>Learn more about our amazing image of the week</p>
-              </div>
-            </div>
-          </a>
-
-          <!-- Blog -->
-          <a href="src/">
-            <div class="carousel-item">
-              <img src="images/alien.jpeg" class="rounded d-block w-100" alt="blog image">
-              <div class="carousel-caption d-md-block">
-                <h3 class="fw-bold">Latest Blog</h3>
-                <p>Come read the most recent blog about how adulting is the worst</p>
-              </div>
-            </div>
-          </a>
-
-          <!-- Archive -->
-          <a href="src/archive.html">
-            <div class="carousel-item">
-              <img src="images/pexels-pixabay-33130.jpg" class="rounded d-block w-100" alt="Archive image">
-              <div class="carousel-caption d-md-block">
-                <h3 class="fw-bold">Archive</h3>
-                <p>Look back at some of most interesting posts</p>
-              </div>
-            </div>
-          </a>
-
-          <!-- Gallery -->
-          <a href="src/gallery.html">
-            <div class="carousel-item">
-              <img src="images/collage.png" class="d-block w-100" alt="Gallery image">
-              <div class="carousel-caption d-md-block">
-                <h3 class="fw-bold">Gallery</h3>
-                <p>Take a look at some our wonderful images taken throughout the year</p>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- sections -->
-    <div class="mainSections">
-      <!-- image of the Week -->
-      <section class="picture border-top">
-        <div class="py-5 container">
-          <h1 class="fw-bold">Image of the Week</h1>
-          <div class="row py-lg-5">
-            <div class="col-lg-6">
-              <p class="lead text-body-secondary"></p>This week's featured image showcases a vibrant downtown scene
-              during sunset. The setting sun casts a warm glow on the busy street, creating long shadows between the
-              tall buildings. The photo captures the dynamic energy of urban life against the backdrop of a serene
-              twilight.<p>
-                <a href="src/pic.html" class="btn btn-primary my-2">Go to Image</a>
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <img src="images/robert-bye-GgMm-KNhofg-unsplash.jpg"
-                alt="busy street with the sun shining through the buildings" class="img-fluid rounded">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Latest Blog -->
-      <section class="blog border-top">
-        <div class="py-5 container">
-          <h1 class="fw-bold">Latest Blog</h1>
-          <div class="row py-lg-5">
-            <div class="col-lg-6">
-              <img src="images/alien.jpeg" alt="blog post image" class="img-fluid rounded">
-            </div>
-            <div class="col-lg-6">
-              <p class="lead text-body-secondary">Something short and leading about the collection below—its contents,
-                the
-                creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.
-              </p>
-              <p>
-              <p class="text-body-secondary">DATE</p>
-              <a href="src/blog.html" class="btn btn-primary my-2">Go to Post</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Archive -->
-      <section class="archive border-top">
-        <div class="py-5 container">
-          <h1 class="fw-bold">Archive</h1>
-          <div class="row py-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 id="blog2Title" class="card-title">Blog Title</h2>
-                  <h4 id="blog2Date" class="card-subtitle mb-2 text-muted">Date</h4>
-                  <p id="blog2Content" class="card-text text-overflow-clamp">...</p>
-                  <a href="src/archive.html"> <button type="button"
-                      class="btn btn-sm btn-outline-secondary">View</button></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 id="blog3Title" class="card-title">Blog Title</h2>
-                  <h4 id="blog3Date" class="card-subtitle mb-2 text-muted">Date</h4>
-                  <p id="blog3Content" class="card-text text-overflow-clamp">...</p>
-                  <a href="src/archive.html"><button type="button"
-                      class="btn btn-sm btn-outline-secondary">View</button></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 id="blog4Title" class="card-title">Blog Title</h2>
-                  <h4 id="blog4Date" class="card-subtitle mb-2 text-muted">Date</h4>
-                  <p id="blog4Content" class="card-text text-overflow-clamp">...</p>
-                  <a href="src/archive.html"><button type="button"
-                      class="btn btn-sm btn-outline-secondary">View</button></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h2 id="blog5Title" class="card-title">Blog Title</h2>
-                  <h4 id="blog5Date" class="card-subtitle mb-2 text-muted">Date</h4>
-                  <p id="blog5Content" class="card-text text-overflow-clamp">...</p>
-                  <a href="src/archive.html"><button type="button"
-                      class="btn btn-sm btn-outline-secondary">View</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <script src="js/blog.js"></script>
-        </div>
-      </section>
-
-      <!-- Gallery -->
-      <section class="gallery border-top">
-        <div class="py-5 album container">
-          <h1 class="fw-bold">Gallery</h1>
-          <div class="row py-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="container my-4">
+      <h1 class="display-2 text-center">Gallery</h1>
+      <div class="album py-5">
+        <div class="container">
+          <div class="row align-items-center row-cols-1 row-cols-sm-2 row-cols-md-2 g-5">
 
             <div class="col">
               <div class="card shadow-sm">
                 <img src="images/ben-karpinski-MoVuFANQimI-unsplash.jpg" alt="waterfall landscape image">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">This landscape seems to be plucked from the canvas of a
-                    dream. A
+                  <p class="card-text">This landscape seems to be plucked from the canvas of a dream. A
                     small river winds its way through the terrain, creating a melody as it cascades down a diminutive
                     waterfall. The sky, adorned with a tapestry of soft clouds, transforms the setting sun into a
                     painter's palette of orange hues. This celestial dance bathes the entire scene in a warm, golden
@@ -275,7 +96,7 @@
                     for the eyes</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">12/08/23</small>
@@ -288,8 +109,8 @@
               <div class="card shadow-sm">
                 <img src="images/laurent-degradi-FMUTz4NIEU4-unsplash.jpg" alt="bird in the bushes">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">In this captivating photograph, nature unveils its masterful
-                    game of hide-and-seek. Amidst the lush marshland, a pelican-like bird becomes a living puzzle piece,
+                  <p class="card-text">In this captivating photograph, nature unveils its masterful game of
+                    hide-and-seek. Amidst the lush marshland, a pelican-like bird becomes a living puzzle piece,
                     skillfully concealed by the verdant tapestry of green grasses and reeds. Its presence is a whisper
                     in the wind, a subtle revelation for those patient enough to discern the intricacies of camouflage.
                     The bird, with its elegant form, melds seamlessly into the wetland canvas, a testament to the
@@ -298,7 +119,7 @@
                     haven.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">12/01/23</small>
@@ -311,8 +132,7 @@
               <div class="card shadow-sm">
                 <img src="images/liuguangxi-lSKL_W3HLHY-unsplash.jpg" alt="fog over rolling hills">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">Behold the ethereal beauty captured in this photograph, where
-                    nature unveils a
+                  <p class="card-text">Behold the ethereal beauty captured in this photograph, where nature unveils a
                     captivating scene of rolling green hills adorned with sporadic clusters of trees. A light fog
                     blankets the landscape, adding an enchanting touch that blurs the boundary between reality and the
                     mystical unknown. The hills, like waves frozen in time, rise and fall with graceful elegance, each
@@ -323,7 +143,7 @@
                     in the sublime allure of the rolling green hills.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">11/24/23</small>
@@ -336,8 +156,7 @@
               <div class="card shadow-sm">
                 <img src="images/maeva-vigier-ZnrODoaeCU0-unsplash.jpg" alt="lake during fall with red trees">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">a serene lake cradled in the foreground, its surface as still
-                    as a forgotten
+                  <p class="card-text">a serene lake cradled in the foreground, its surface as still as a forgotten
                     memory. The mirrored reflection of a kaleidoscope of red-leafed trees paints a vivid mosaic on the
                     water's glassy canvas. Each scarlet leaf tells a tale of seasonal transition, creating a
                     breathtaking backdrop that encapsulates the essence of fall. At the water's edge, a small patch of
@@ -346,7 +165,7 @@
                     rustling whispers of the autumn breeze.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">11/17/23</small>
@@ -359,8 +178,7 @@
               <div class="card shadow-sm">
                 <img src="images/pascal-debrunner-v1xdrweX0Ok-unsplash.jpg" alt="mountain lake with sunrays">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">Within the mountain embrace lies a crystalline lake, a serene
-                    expanse mirroring
+                  <p class="card-text">Within the mountain embrace lies a crystalline lake, a serene expanse mirroring
                     the rugged grandeur of the surrounding peaks. To one side, towering cliffs boldly challenge the
                     heavens, their precipitous descent creating a majestic spectacle over the pristine waters. On the
                     opposing side, a rocky isle, adorned with proud pine sentinels, emerges like a verdant sanctuary
@@ -368,7 +186,7 @@
                     stone, mountain and forest, unite in a silent ballet beneath the open sky. </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">11/10/23</small>
@@ -381,8 +199,7 @@
               <div class="card shadow-sm">
                 <img src="images/peter-hammer-SXTj90G1f5c-unsplash.jpg" alt="tall mountains over a foggy lake">
                 <div class="card-body">
-                  <p class="card-text text-overflow-clamp">In the heart of this celestial amphitheater, nature
-                    orchestrates a sublime
+                  <p class="card-text">In the heart of this celestial amphitheater, nature orchestrates a sublime
                     ballet—an expansive valley cradled between towering mountain sentinels. The mountain peaks, adorned
                     in a regal cloak of mist, stand as ethereal guardians veiled in celestial secrecy. Beneath their
                     lofty embrace, a tranquil lake mirrors the profound silence, undisturbed by the world beyond. As the
@@ -391,7 +208,7 @@
                     the essence of a divine serenity, where earth and sky converge in a ballet of mist and light.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="src/gallery.html"><button type="button"
+                      <a href="gallery.html"><button type="button"
                           class="btn btn-sm btn-outline-secondary">View</button></a>
                     </div>
                     <small class="text-body-secondary">11/03/23</small>
@@ -399,19 +216,15 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-      </section>
-
+      </div>
     </div>
-
-
   </main>
 
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
     <div class="col mb-3">
-      <a href="src/index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
       <p class="text-body-secondary p-0">Copyright © 2023</p>
       <p class="text-body-secondary p-0">Anthony Wilson</p>
     </div>
@@ -423,12 +236,12 @@
     <div class="col mb-3">
       <h5>Navigation</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="src/index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-        <li class="nav-item mb-2"><a href="src/about.html" class="nav-link p-0 text-body-secondary">About Me</a></li>
-        <li class="nav-item mb-2"><a href="src/blog.html" class="nav-link p-0 text-body-secondary">Today's Blog</a></li>
-        <li class="nav-item mb-2"><a href="src/pic.html" class="nav-link p-0 text-body-secondary">Image of the Week</a></li>
-        <li class="nav-item mb-2"><a href="src/archive.html" class="nav-link p-0 text-body-secondary">Archive</a></li>
-        <li class="nav-item mb-2"><a href="src/gallery.html" class="nav-link p-0 text-body-secondary">Gallery</a></li>
+        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About Me</a></li>
+        <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-body-secondary">Today's Blog</a></li>
+        <li class="nav-item mb-2"><a href="pic.html" class="nav-link p-0 text-body-secondary">Image of the Week</a></li>
+        <li class="nav-item mb-2"><a href="archive.html" class="nav-link p-0 text-body-secondary">Archive</a></li>
+        <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-body-secondary">Gallery</a></li>
       </ul>
     </div>
 
